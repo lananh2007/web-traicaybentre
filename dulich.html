@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trái Cây & Du Lịch Bến Tre</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    Bến Tre Xanh
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gioithieu.html">Giới Thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="dulich.html">Địa Điểm Tham Quan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="danhmuc.html">Danh Mục Trái Cây</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Địa điểm tham quan -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up" style="margin-top: 80px;">Khám Phá Bến Tre</h2>
+            <div class="row g-4">
+                <!-- Cồn Phụng -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="place-card card h-100">
+                        <img src="images/dd1.jpg" class="card-img-top" alt="Cồn Phụng">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Cồn Phụng</h4>
+                            <p class="card-text">Cồn Phụng - điểm du lịch nổi tiếng với đạo dừa và các hoạt động văn hóa
+                                đặc sắc của người dân địa phương.</p>
+                            <ul class="place-features">
+                                <li><i class="bi bi-geo-alt-fill text-success"></i> Huyện Châu Thành</li>
+                                <li><i class="bi bi-clock-fill text-success"></i> 7:00 - 17:00</li>
+                                <li><i class="bi bi-tag-fill text-success"></i> Từ 50.000đ/người</li>
+                            </ul>
+                            <button class="btn btn-success mt-auto w-100" data-bs-toggle="modal"
+                                data-bs-target="#conPhungModal">
+                                Xem chi tiết <i class="bi bi-arrow-right-circle ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Làng Hoa Cảnh Cho Lách -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="place-card card h-100">
+                        <img src="images/dd2.jpg" class="card-img-top" alt="Làng Hoa Cảnh">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Làng Hoa Cảnh Cho Lách</h4>
+                            <p class="card-text">Làng nghề truyền thống với những vườn hoa, cây cảnh đẹp mắt, đặc biệt
+                                nhộn nịp vào dịp Tết.</p>
+                            <ul class="place-features">
+                                <li><i class="bi bi-geo-alt-fill text-success"></i> Huyện Cho Lách</li>
+                                <li><i class="bi bi-clock-fill text-success"></i> Cả ngày</li>
+                                <li><i class="bi bi-tag-fill text-success"></i> Miễn phí tham quan</li>
+                            </ul>
+                            <button class="btn btn-success mt-auto w-100" data-bs-toggle="modal"
+                                data-bs-target="#langHoaModal">
+                                Xem chi tiết <i class="bi bi-arrow-right-circle ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cồn Thới Sơn -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="place-card card h-100">
+                        <img src="images/dd3.jpg" class="card-img-top" alt="Cồn Thới Sơn">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Cồn Thới Sơn</h4>
+                            <p class="card-text">Cồn Thới Sơn - điểm du lịch sinh thái nổi tiếng với vườn trái cây và
+                                các hoạt động trải nghiệm văn hóa miệt vườn.</p>
+                            <ul class="place-features">
+                                <li><i class="bi bi-geo-alt-fill text-success"></i> Huyện Châu Thành</li>
+                                <li><i class="bi bi-clock-fill text-success"></i> 7:00 - 17:00</li>
+                                <li><i class="bi bi-tag-fill text-success"></i> Từ 30.000đ/người</li>
+                            </ul>
+                            <button class="btn btn-success mt-auto w-100" data-bs-toggle="modal"
+                                data-bs-target="#thoiSonModal">
+                                Xem chi tiết <i class="bi bi-arrow-right-circle ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chợ nổi Cái Bè -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="place-card card h-100">
+                        <img src="images/dd4.jpg" class="card-img-top" alt="Chợ nổi Cái Bè">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Chợ Nổi Cái Bè</h4>
+                            <p class="card-text">Chợ nổi Cái Bè - nét văn hóa đặc trưng của miền sông nước, nơi trao đổi
+                                hàng hóa trên sông.</p>
+                            <ul class="place-features">
+                                <li><i class="bi bi-geo-alt-fill text-success"></i> Cái Bè, Tiền Giang</li>
+                                <li><i class="bi bi-clock-fill text-success"></i> 5:00 - 11:00</li>
+                                <li><i class="bi bi-tag-fill text-success"></i> Tour từ 200.000đ</li>
+                            </ul>
+                            <button class="btn btn-success mt-auto w-100" data-bs-toggle="modal"
+                                data-bs-target="#choNoiModal">
+                                Xem chi tiết <i class="bi bi-arrow-right-circle ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Khu du lịch Phú An Khương -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="place-card card h-100">
+                        <img src="images/dd5.jpg" class="card-img-top" alt="Phú An Khương">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">KDL Phú An Khương</h4>
+                            <p class="card-text">Khu du lịch sinh thái với không gian xanh mát, nhiều hoạt động giải trí
+                                và ẩm thực đặc sắc.</p>
+                            <ul class="place-features">
+                                <li><i class="bi bi-geo-alt-fill text-success"></i> Huyện Mỏ Cày Nam</li>
+                                <li><i class="bi bi-clock-fill text-success"></i> 7:00 - 22:00</li>
+                                <li><i class="bi bi-tag-fill text-success"></i> Từ 40.000đ/người</li>
+                            </ul>
+                            <button class="btn btn-success mt-auto w-100" data-bs-toggle="modal"
+                                data-bs-target="#phuAnKhuongModal">
+                                Xem chi tiết <i class="bi bi-arrow-right-circle ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Làng nghề dừa Tam Hiệp -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="place-card card h-100">
+                        <img src="images/dd6.jpg" class="card-img-top" alt="Làng nghề dừa">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Làng Nghề Dừa Tam Hiệp</h4>
+                            <p class="card-text">Khám phá quy trình chế biến dừa và các sản phẩm thủ công mỹ nghệ từ dừa
+                                độc đáo.</p>
+                            <ul class="place-features">
+                                <li><i class="bi bi-geo-alt-fill text-success"></i> Xã Tam Hiệp</li>
+                                <li><i class="bi bi-clock-fill text-success"></i> 7:00 - 17:00</li>
+                                <li><i class="bi bi-tag-fill text-success"></i> Miễn phí tham quan</li>
+                            </ul>
+                            <button class="btn btn-success mt-auto w-100" data-bs-toggle="modal"
+                                data-bs-target="#tamHiepModal">
+                                Xem chi tiết <i class="bi bi-arrow-right-circle ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Cồn Phụng -->
+    <div class="modal fade" id="conPhungModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cồn Phụng - Đảo Dừa Bến Tre</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/dd1.jpg" alt="Cồn Phụng" class="img-fluid rounded mb-3">
+                            <!-- Thông tin cơ bản -->
+                            <div class="location-info">
+                                <h6 class="fw-bold mb-3">Thông tin chi tiết:</h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <i class="bi bi-geo-alt-fill text-success me-2"></i>
+                                        <strong>Địa chỉ:</strong> Ấp 8, Xã Tân Thạch, Huyện Châu Thành, Bến Tre
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-clock-fill text-success me-2"></i>
+                                        <strong>Giờ mở cửa:</strong> 7:00 - 17:00 (Hàng ngày)
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-tag-fill text-success me-2"></i>
+                                        <strong>Giá vé:</strong>
+                                        <ul class="ms-4">
+                                            <li>Người lớn: 50.000đ/người</li>
+                                            <li>Trẻ em: 25.000đ/người</li>
+                                            <li>Tour trọn gói: 150.000đ/người</li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-telephone-fill text-success me-2"></i>
+                                        <strong>Liên hệ:</strong> 0968 867 242
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- Điểm nổi bật -->
+                            <h6 class="fw-bold">Điểm nổi bật:</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Khám phá văn hóa đạo dừa
+                                </li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Thưởng thức ẩm thực đặc sản
+                                </li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Tham quan vườn dừa</li>
+                            </ul>
+
+                            <!-- Hoạt động -->
+                            <h6 class="fw-bold">Hoạt động thú vị:</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Đi xuồng ba lá</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Tham quan nhà cổ</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Xem biểu diễn nhạc cụ dân
+                                    tộc</li>
+                            </ul>
+
+                            <!-- Google Maps -->
+                            <h6 class="fw-bold mb-3">Vị trí trên bản đồ:</h6>
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.3265247640774!2d106.56999067587893!3d10.231843668995367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310aa0f2337500c3%3A0x2b5a1e799837b7c4!2zQ-G7k24gUGjhu6VuZw!5e0!3m2!1svi!2s!4v1709697824611!5m2!1svi!2s"
+                                    width="100%" height="250" style="border:0; border-radius: 10px;" allowfullscreen=""
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phần đánh giá và bình luận -->
+                    <div class="review-section mt-4">
+                        <hr>
+                        <h6 class="fw-bold mb-3">Đánh giá & Bình luận</h6>
+
+                        <!-- Hiển thị đánh giá trung bình -->
+                        <div class="rating-summary mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="rating-average me-3">
+                                    <span class="display-4 fw-bold text-success">4.5</span>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-half text-warning"></i>
+                                    </div>
+                                    <small class="text-muted">Dựa trên 234 đánh giá</small>
+                                </div>
+                                <div class="rating-bars flex-grow-1">
+                                    <div class="rating-bar d-flex align-items-center mb-1">
+                                        <span class="me-2">5</span>
+                                        <div class="progress flex-grow-1" style="height: 8px;">
+                                            <div class="progress-bar bg-success" style="width: 75%"></div>
+                                        </div>
+                                        <span class="ms-2">180</span>
+                                    </div>
+                                    <div class="rating-bar d-flex align-items-center mb-1">
+                                        <span class="me-2">4</span>
+                                        <div class="progress flex-grow-1" style="height: 8px;">
+                                            <div class="progress-bar bg-success" style="width: 15%"></div>
+                                        </div>
+                                        <span class="ms-2">35</span>
+                                    </div>
+                                    <!-- Tương tự cho các mức đánh giá khác -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form đánh giá mới -->
+                        <div class="review-form mb-4">
+                            <h6 class="fw-bold mb-3">Viết đánh giá của bạn</h6>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Đánh giá của bạn</label>
+                                    <div class="rating-input">
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4" role="button"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reviewName" class="form-label">Tên của bạn</label>
+                                    <input type="text" class="form-control" id="reviewName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reviewContent" class="form-label">Nội dung đánh giá</label>
+                                    <textarea class="form-control" id="reviewContent" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-success">Gửi đánh giá</button>
+                            </form>
+                        </div>
+
+                        <!-- Danh sách bình luận -->
+                        <div class="review-list">
+                            <h6 class="fw-bold mb-3">Các đánh giá gần đây</h6>
+
+                            <!-- Bình luận mẫu -->
+                            <div class="review-item mb-3 p-3 border rounded">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <h6 class="mb-0">Nguyễn Văn A</h6>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted">2 ngày trước</small>
+                                </div>
+                                <p class="mb-0">Địa điểm rất đẹp, không gian thoáng mát. Nhân viên phục vụ nhiệt tình,
+                                    thân thiện.</p>
+                            </div>
+
+                            <!-- Thêm các bình luận khác tương tự -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Làng Hoa Cảnh -->
+    <div class="modal fade" id="langHoaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Làng Hoa Cảnh Cho Lách</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/dd2.jpg" alt="Làng Hoa Cảnh" class="img-fluid rounded mb-3">
+                            <!-- Thông tin cơ bản -->
+                            <div class="location-info">
+                                <h6 class="fw-bold mb-3">Thông tin chi tiết:</h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <i class="bi bi-geo-alt-fill text-success me-2"></i>
+                                        <strong>Địa chỉ:</strong> Xã Long Thới, Huyện Cho Lách, Bến Tre
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-clock-fill text-success me-2"></i>
+                                        <strong>Giờ mở cửa:</strong> Cả ngày (Tốt nhất từ 7:00 - 17:00)
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-tag-fill text-success me-2"></i>
+                                        <strong>Giá vé:</strong>
+                                        <ul class="ms-4">
+                                            <li>Miễn phí tham quan</li>
+                                            <li>Chi phí hướng dẫn: 100.000đ/đoàn</li>
+                                            <li>Tour trải nghiệm: 200.000đ/người</li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-telephone-fill text-success me-2"></i>
+                                        <strong>Liên hệ:</strong> 0968 867 242
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- Điểm nổi bật -->
+                            <h6 class="fw-bold">Điểm nổi bật:</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Làng nghề truyền thống 100
+                                    năm tuổi</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Đa dạng các loại hoa kiểng
+                                </li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Nghệ thuật tạo tác cây cảnh
+                                    độc đáo</li>
+                            </ul>
+
+                            <!-- Hoạt động -->
+                            <h6 class="fw-bold">Hoạt động thú vị:</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Tham quan vườn hoa kiểng
+                                </li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Học cách chăm sóc cây cảnh
+                                </li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Chụp ảnh với các loại hoa
+                                    đẹp</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Trải nghiệm làm nghệ nhân
+                                </li>
+                            </ul>
+
+                            <!-- Google Maps -->
+                            <h6 class="fw-bold mb-3">Vị trí trên bản đồ:</h6>
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31415.337433318895!2d106.15439533476561!3d10.239057199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310aa3e0db270bcd%3A0xb1497b6c4f6ed998!2zTMOgbmcgSG9hIEtp4bq_bmcgQ2hvIEzDoWNo!5e0!3m2!1svi!2s!4v1709698893904!5m2!1svi!2s"
+                                    width="100%" height="250" style="border:0; border-radius: 10px;" allowfullscreen=""
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phần đánh giá và bình luận -->
+                    <div class="review-section mt-4">
+                        <hr>
+                        <h6 class="fw-bold mb-3">Đánh giá & Bình luận</h6>
+
+                        <!-- Hiển thị đánh giá trung bình -->
+                        <div class="rating-summary mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="rating-average me-3">
+                                    <span class="display-4 fw-bold text-success">4.7</span>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-half text-warning"></i>
+                                    </div>
+                                    <small class="text-muted">Dựa trên 156 đánh giá</small>
+                                </div>
+                                <div class="rating-bars flex-grow-1">
+                                    <div class="rating-bar d-flex align-items-center mb-1">
+                                        <span class="me-2">5</span>
+                                        <div class="progress flex-grow-1" style="height: 8px;">
+                                            <div class="progress-bar bg-success" style="width: 80%"></div>
+                                        </div>
+                                        <span class="ms-2">120</span>
+                                    </div>
+                                    <div class="rating-bar d-flex align-items-center mb-1">
+                                        <span class="me-2">4</span>
+                                        <div class="progress flex-grow-1" style="height: 8px;">
+                                            <div class="progress-bar bg-success" style="width: 15%"></div>
+                                        </div>
+                                        <span class="ms-2">25</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form đánh giá mới -->
+                        <div class="review-form mb-4">
+                            <h6 class="fw-bold mb-3">Viết đánh giá của bạn</h6>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Đánh giá của bạn</label>
+                                    <div class="rating-input">
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4" role="button"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reviewName" class="form-label">Tên của bạn</label>
+                                    <input type="text" class="form-control" id="reviewName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reviewContent" class="form-label">Nội dung đánh giá</label>
+                                    <textarea class="form-control" id="reviewContent" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-success">Gửi đánh giá</button>
+                            </form>
+                        </div>
+
+                        <!-- Danh sách bình luận -->
+                        <div class="review-list">
+                            <h6 class="fw-bold mb-3">Các đánh giá gần đây</h6>
+                            <!-- Bình luận mẫu -->
+                            <div class="review-item mb-3 p-3 border rounded">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <h6 class="mb-0">Trần Thị B</h6>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted">1 tuần trước</small>
+                                </div>
+                                <p class="mb-0">Làng hoa cảnh rất đẹp, đặc biệt vào dịp Tết. Không gian thoáng đãng,
+                                    nhiều góc chụp ảnh đẹp.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Cồn Thới Sơn -->
+    <div class="modal fade" id="thoiSonModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cồn Thới Sơn - Du Lịch Sinh Thái</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/dd3.jpg" alt="Cồn Thới Sơn" class="img-fluid rounded mb-3">
+                            <div class="location-info">
+                                <h6 class="fw-bold mb-3">Thông tin chi tiết:</h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <i class="bi bi-geo-alt-fill text-success me-2"></i>
+                                        <strong>Địa chỉ:</strong> Xã Thới Sơn, Huyện Châu Thành, Bến Tre
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-clock-fill text-success me-2"></i>
+                                        <strong>Giờ mở cửa:</strong> 7:00 - 17:00 (Hàng ngày)
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-tag-fill text-success me-2"></i>
+                                        <strong>Giá vé:</strong>
+                                        <ul class="ms-4">
+                                            <li>Vé tham quan: 30.000đ/người</li>
+                                            <li>Tour trọn gói: 150.000đ/người</li>
+                                            <li>Trẻ em dưới 6 tuổi: Miễn phí</li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-telephone-fill text-success me-2"></i>
+                                        <strong>Liên hệ:</strong> 0968 867 242
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Điểm nổi bật:</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Vườn trái cây đa dạng</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Không gian sông nước yên
+                                    bình</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Ẩm thực đặc sắc miền sông
+                                    nước</li>
+                            </ul>
+
+                            <h6 class="fw-bold">Hoạt động thú vị:</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Tham quan vườn trái cây
+                                </li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Trải nghiệm đi xuồng ba lá
+                                </li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Thưởng thức trái cây theo
+                                    mùa</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Nghe đờn ca tài tử</li>
+                            </ul>
+
+                            <h6 class="fw-bold mb-3">Vị trí trên bản đồ:</h6>
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15705.30461937121!2d106.59999!3d10.2318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310aa0f2337500c3%3A0x2b5a1e799837b7c4!2zQ-G7k24gVGjhu5tpIFPGoW4!5e0!3m2!1svi!2s!4v1709699893904!5m2!1svi!2s"
+                                    width="100%" height="250" style="border:0; border-radius: 10px;" allowfullscreen=""
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phần đánh giá và bình luận -->
+                    <div class="review-section mt-4">
+                        <hr>
+                        <h6 class="fw-bold mb-3">Đánh giá & Bình luận</h6>
+
+                        <!-- Hiển thị đánh giá trung bình -->
+                        <div class="rating-summary mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="rating-average me-3">
+                                    <span class="display-4 fw-bold text-success">4.6</span>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-half text-warning"></i>
+                                    </div>
+                                    <small class="text-muted">Dựa trên 189 đánh giá</small>
+                                </div>
+                                <div class="rating-bars flex-grow-1">
+                                    <div class="rating-bar d-flex align-items-center mb-1">
+                                        <span class="me-2">5</span>
+                                        <div class="progress flex-grow-1" style="height: 8px;">
+                                            <div class="progress-bar bg-success" style="width: 75%"></div>
+                                        </div>
+                                        <span class="ms-2">140</span>
+                                    </div>
+                                    <div class="rating-bar d-flex align-items-center mb-1">
+                                        <span class="me-2">4</span>
+                                        <div class="progress flex-grow-1" style="height: 8px;">
+                                            <div class="progress-bar bg-success" style="width: 20%"></div>
+                                        </div>
+                                        <span class="ms-2">35</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form đánh giá mới -->
+                        <div class="review-form mb-4">
+                            <h6 class="fw-bold mb-3">Viết đánh giá của bạn</h6>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Đánh giá của bạn</label>
+                                    <div class="rating-input">
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4" role="button"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reviewName" class="form-label">Tên của bạn</label>
+                                    <input type="text" class="form-control" id="reviewName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reviewContent" class="form-label">Nội dung đánh giá</label>
+                                    <textarea class="form-control" id="reviewContent" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-success">Gửi đánh giá</button>
+                            </form>
+                        </div>
+
+                        <!-- Danh sách bình luận -->
+                        <div class="review-list">
+                            <h6 class="fw-bold mb-3">Các đánh giá gần đây</h6>
+                            <!-- Bình luận mẫu -->
+                            <div class="review-item mb-3 p-3 border rounded">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <h6 class="mb-0">Lê Văn C</h6>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted">3 ngày trước</small>
+                                </div>
+                                <p class="mb-0">Trải nghiệm tuyệt vời với các hoạt động văn hóa miệt vườn. Đặc biệt
+                                    thích thú với việc đi xuồng ba lá và thưởng thức trái cây tại vườn.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Chợ Nổi Cái Bè -->
+    <div class="modal fade" id="choNoiModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Chợ Nổi Cái Bè - Di Sản Văn Hóa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/dd4.jpg" alt="Chợ nổi Cái Bè" class="img-fluid rounded mb-3">
+                            <div class="location-info">
+                                <h6 class="fw-bold mb-3">Thông tin chi tiết:</h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <i class="bi bi-geo-alt-fill text-success me-2"></i>
+                                        <strong>Địa chỉ:</strong> Phường 1, Thị xã Cái Bè, Tiền Giang
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-clock-fill text-success me-2"></i>
+                                        <strong>Giờ hoạt động:</strong> 5:00 - 11:00 (Sáng sớm là đẹp nhất)
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-tag-fill text-success me-2"></i>
+                                        <strong>Chi phí:</strong>
+                                        <ul class="ms-4">
+                                            <li>Tour tham quan: 200.000đ/người</li>
+                                            <li>Thuê thuyền riêng: 500.000đ/thuyền</li>
+                                            <li>Tour chụp ảnh: 300.000đ/người</li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-telephone-fill text-success me-2"></i>
+                                        <strong>Đặt tour:</strong> 0968 867 242
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Điểm nổi bật:</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Chợ nổi truyền thống</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Văn hóa buôn bán độc đáo
+                                </li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Ẩm thực đường sông phong
+                                    phú</li>
+                            </ul>
+
+                            <h6 class="fw-bold">Hoạt động thú vị:</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Tham quan chợ nổi buổi sáng
+                                </li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Chụp ảnh cảnh buôn bán trên
+                                    sông</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Thưởng thức ẩm thực sông
+                                    nước</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Trải nghiệm đi thuyền</li>
+                            </ul>
+
+                            <h6 class="fw-bold mb-3">Vị trí trên bản đồ:</h6>
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.6793366946437!2d106.03493776749576!3d10.321569153997287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310aa7c5aa6d6221%3A0x33ea55e46f60c35f!2zQ2jhu6MgTuG7lWkgQ8OhaSBCw6g!5e0!3m2!1svi!2s!4v1709699993904!5m2!1svi!2s"
+                                    width="100%" height="250" style="border:0; border-radius: 10px;" allowfullscreen=""
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phần đánh giá và bình luận -->
+                    <div class="review-section mt-4">
+                        <hr>
+                        <h6 class="fw-bold mb-3">Đánh giá & Bình luận</h6>
+
+                        <!-- Hiển thị đánh giá trung bình -->
+                        <div class="rating-summary mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="rating-average me-3">
+                                    <span class="display-4 fw-bold text-success">4.8</span>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-half text-warning"></i>
+                                    </div>
+                                    <small class="text-muted">Dựa trên 245 đánh giá</small>
+                                </div>
+                                <div class="rating-bars flex-grow-1">
+                                    <div class="rating-bar d-flex align-items-center mb-1">
+                                        <span class="me-2">5</span>
+                                        <div class="progress flex-grow-1" style="height: 8px;">
+                                            <div class="progress-bar bg-success" style="width: 85%"></div>
+                                        </div>
+                                        <span class="ms-2">200</span>
+                                    </div>
+                                    <div class="rating-bar d-flex align-items-center mb-1">
+                                        <span class="me-2">4</span>
+                                        <div class="progress flex-grow-1" style="height: 8px;">
+                                            <div class="progress-bar bg-success" style="width: 15%"></div>
+                                        </div>
+                                        <span class="ms-2">45</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form đánh giá mới -->
+                        <div class="review-form mb-4">
+                            <h6 class="fw-bold mb-3">Viết đánh giá của bạn</h6>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Đánh giá của bạn</label>
+                                    <div class="rating-input">
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4" role="button"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reviewName" class="form-label">Tên của bạn</label>
+                                    <input type="text" class="form-control" id="reviewName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reviewContent" class="form-label">Nội dung đánh giá</label>
+                                    <textarea class="form-control" id="reviewContent" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-success">Gửi đánh giá</button>
+                            </form>
+                        </div>
+
+                        <!-- Danh sách bình luận -->
+                        <div class="review-list">
+                            <h6 class="fw-bold mb-3">Các đánh giá gần đây</h6>
+                            <!-- Bình luận mẫu -->
+                            <div class="review-item mb-3 p-3 border rounded">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <h6 class="mb-0">Nguyễn Văn D</h6>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted">2 ngày trước</small>
+                                </div>
+                                <p class="mb-0">Chợ nổi Cái Bè là trải nghiệm không thể bỏ qua khi đến miền Tây. Không
+                                    khí buôn bán
+                                    trên sông rất nhộn nhịp, đặc biệt là vào buổi sáng sớm.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Phú An Khương -->
+    <div class="modal fade" id="phuAnKhuongModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Khu Du Lịch Phú An Khương</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/dd5.jpg" alt="Phú An Khương" class="img-fluid rounded mb-3">
+                            <div class="location-info">
+                                <h6 class="fw-bold mb-3">Thông tin chi tiết:</h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <i class="bi bi-geo-alt-fill text-success me-2"></i>
+                                        <strong>Địa chỉ:</strong> Xã An Thạnh, Huyện Mỏ Cày Nam, Bến Tre
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-clock-fill text-success me-2"></i>
+                                        <strong>Giờ mở cửa:</strong> 7:00 - 22:00
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-tag-fill text-success me-2"></i>
+                                        <strong>Giá vé:</strong>
+                                        <ul class="ms-4">
+                                            <li>Vé vào cổng: 40.000đ/người</li>
+                                            <li>Trọn gói dịch vụ: 200.000đ/người</li>
+                                            <li>Trẻ em dưới 1m: Miễn phí</li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-telephone-fill text-success me-2"></i>
+                                        <strong>Liên hệ:</strong> 0968 867 242
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Điểm nổi bật:</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Không gian xanh mát</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Nhiều hoạt động giải trí
+                                </li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Ẩm thực đa dạng</li>
+                            </ul>
+
+                            <h6 class="fw-bold">Hoạt động thú vị:</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Tắm hồ bơi</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Câu cá giải trí</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Chèo thuyền kayak</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Camping ngoài trời</li>
+                            </ul>
+
+                            <h6 class="fw-bold mb-3">Vị trí trên bản đồ:</h6>
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.9876543210123!2d106.3456789!3d10.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zS0RMIFBow7ogQW4gS2jGsMahbmc!5e0!3m2!1svi!2s!4v1709700093904!5m2!1svi!2s"
+                                    width="100%" height="250" style="border:0; border-radius: 10px;" allowfullscreen=""
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phần đánh giá và bình luận -->
+                    <div class="review-section mt-4">
+                        <hr>
+                        <h6 class="fw-bold mb-3">Đánh giá & Bình luận</h6>
+
+                        <!-- Hiển thị đánh giá trung bình -->
+                        <div class="rating-summary mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="rating-average me-3">
+                                    <span class="display-4 fw-bold text-success">4.5</span>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-half text-warning"></i>
+                                    </div>
+                                    <small class="text-muted">Dựa trên 178 đánh giá</small>
+                                </div>
+                                <div class="rating-bars flex-grow-1">
+                                    <div class="rating-bar d-flex align-items-center mb-1">
+                                        <span class="me-2">5</span>
+                                        <div class="progress flex-grow-1" style="height: 8px;">
+                                            <div class="progress-bar bg-success" style="width: 70%"></div>
+                                        </div>
+                                        <span class="ms-2">125</span>
+                                    </div>
+                                    <div class="rating-bar d-flex align-items-center mb-1">
+                                        <span class="me-2">4</span>
+                                        <div class="progress flex-grow-1" style="height: 8px;">
+                                            <div class="progress-bar bg-success" style="width: 25%"></div>
+                                        </div>
+                                        <span class="ms-2">45</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form đánh giá mới -->
+                        <div class="review-form mb-4">
+                            <h6 class="fw-bold mb-3">Viết đánh giá của bạn</h6>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Đánh giá của bạn</label>
+                                    <div class="rating-input">
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4" role="button"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reviewName" class="form-label">Tên của bạn</label>
+                                    <input type="text" class="form-control" id="reviewName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reviewContent" class="form-label">Nội dung đánh giá</label>
+                                    <textarea class="form-control" id="reviewContent" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-success">Gửi đánh giá</button>
+                            </form>
+                        </div>
+
+                        <!-- Danh sách bình luận -->
+                        <div class="review-list">
+                            <h6 class="fw-bold mb-3">Các đánh giá gần đây</h6>
+                            <!-- Bình luận mẫu -->
+                            <div class="review-item mb-3 p-3 border rounded">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <h6 class="mb-0">Phạm Thị E</h6>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted">5 ngày trước</small>
+                                </div>
+                                <p class="mb-0">Khu du lịch rất đẹp và sạch sẽ. Các hoạt động giải trí đa dạng, phù hợp
+                                    cho cả
+                                    gia đình. Đặc biệt thích khu vực hồ bơi và khu camping.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Làng Nghề Dừa Tam Hiệp -->
+    <div class="modal fade" id="tamHiepModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Làng Nghề Dừa Tam Hiệp</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/dd6.jpg" alt="Làng nghề dừa" class="img-fluid rounded mb-3">
+                            <div class="location-info">
+                                <h6 class="fw-bold mb-3">Thông tin chi tiết:</h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <i class="bi bi-geo-alt-fill text-success me-2"></i>
+                                        <strong>Địa chỉ:</strong> Xã Tam Hiệp, Huyện Châu Thành, Bến Tre
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-clock-fill text-success me-2"></i>
+                                        <strong>Giờ mở cửa:</strong> 7:00 - 17:00 (Hàng ngày)
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-tag-fill text-success me-2"></i>
+                                        <strong>Chi phí:</strong>
+                                        <ul class="ms-4">
+                                            <li>Miễn phí tham quan</li>
+                                            <li>Workshop làm kẹo dừa: 50.000đ/người</li>
+                                            <li>Tour trải nghiệm: 150.000đ/người</li>
+                                        </ul>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-telephone-fill text-success me-2"></i>
+                                        <strong>Liên hệ:</strong> 0968 867 242
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Điểm nổi bật:</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Làng nghề truyền thống</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Sản phẩm thủ công từ dừa
+                                </li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Quy trình chế biến độc đáo
+                                </li>
+                            </ul>
+
+                            <h6 class="fw-bold">Hoạt động thú vị:</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Tham quan quy trình làm kẹo
+                                    dừa</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Học làm thủ công mỹ nghệ
+                                </li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Mua sắm đặc sản</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Trải nghiệm làm nghệ nhân
+                                </li>
+                            </ul>
+
+                            <h6 class="fw-bold mb-3">Vị trí trên bản đồ:</h6>
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.9876543210123!2d106.5678901!3d10.2345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zTMOgbmcgTmdo4buBIEThu6thIFRhbSBIaeG7h3A!5e0!3m2!1svi!2s!4v1709700193904!5m2!1svi!2s"
+                                    width="100%" height="250" style="border:0; border-radius: 10px;" allowfullscreen=""
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phần đánh giá và bình luận -->
+                    <div class="review-section mt-4">
+                        <hr>
+                        <h6 class="fw-bold mb-3">Đánh giá & Bình luận</h6>
+
+                        <!-- Hiển thị đánh giá trung bình -->
+                        <div class="rating-summary mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="rating-average me-3">
+                                    <span class="display-4 fw-bold text-success">4.7</span>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-half text-warning"></i>
+                                    </div>
+                                    <small class="text-muted">Dựa trên 167 đánh giá</small>
+                                </div>
+                                <div class="rating-bars flex-grow-1">
+                                    <div class="rating-bar d-flex align-items-center mb-1">
+                                        <span class="me-2">5</span>
+                                        <div class="progress flex-grow-1" style="height: 8px;">
+                                            <div class="progress-bar bg-success" style="width: 80%"></div>
+                                        </div>
+                                        <span class="ms-2">130</span>
+                                    </div>
+                                    <div class="rating-bar d-flex align-items-center mb-1">
+                                        <span class="me-2">4</span>
+                                        <div class="progress flex-grow-1" style="height: 8px;">
+                                            <div class="progress-bar bg-success" style="width: 20%"></div>
+                                        </div>
+                                        <span class="ms-2">37</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form đánh giá mới -->
+                        <div class="review-form mb-4">
+                            <h6 class="fw-bold mb-3">Viết đánh giá của bạn</h6>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Đánh giá của bạn</label>
+                                    <div class="rating-input">
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4 me-1" role="button"></i>
+                                        <i class="bi bi-star fs-4" role="button"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reviewName" class="form-label">Tên của bạn</label>
+                                    <input type="text" class="form-control" id="reviewName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reviewContent" class="form-label">Nội dung đánh giá</label>
+                                    <textarea class="form-control" id="reviewContent" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-success">Gửi đánh giá</button>
+                            </form>
+                        </div>
+
+                        <!-- Danh sách bình luận -->
+                        <div class="review-list">
+                            <h6 class="fw-bold mb-3">Các đánh giá gần đây</h6>
+                            <!-- Bình luận mẫu -->
+                            <div class="review-item mb-3 p-3 border rounded">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <h6 class="mb-0">Trần Văn F</h6>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted">1 tuần trước</small>
+                                </div>
+                                <p class="mb-0">Rất thích thú với quy trình làm kẹo dừa và các sản phẩm thủ công từ dừa.
+                                    Người dân
+                                    địa phương rất thân thiện và nhiệt tình hướng dẫn.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Thông tin liên hệ -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Liên Hệ</h5>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>123 Đường 30/4, TP. Bến Tre</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i>0968 867 242</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i>lananhle682@gmail.com</p>
+                    <div class="social-links mt-3">
+                        <a href="https://web.facebook.com/people/Thang-L%C3%AA/100009074363622/"
+                            class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.youtube.com/watch?v=gQow8IIj_r0" class="text-white me-3"><i
+                                class="bi bi-youtube"></i></a>
+                        <a href="https://www.instagram.com/" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Liên kết nhanh -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Liên Kết Nhanh</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Trang Chủ</a></li>
+                        <li class="mb-2"><a href="gioithieu.html" class="text-white text-decoration-none">Giới Thiệu</a>
+                        </li>
+                        <li class="mb-2"><a href="danhmuc.html" class="text-white text-decoration-none">Danh Mục Trái
+                                Cây</a></li>
+                        <li class="mb-2"><a href="dulich.html" class="text-white text-decoration-none">Địa Điểm Du
+                                Lịch</a></li>
+                    </ul>
+                </div>
+
+                <!-- Đăng ký nhận tin -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Đăng Ký Nhận Tin</h5>
+                    <p>Đăng ký để nhận thông tin mới nhất về trái cây và du lịch Bến Tre</p>
+                    <form class="mt-3">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email của bạn">
+                            <button class="btn btn-primary" type="submit">Đăng Ký</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <hr class="bg-light">
+                    <p class="text-center mb-0">© 2024 Bến Tre Xanh. Tất cả quyền được bảo lưu.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Thêm vào cuối file, trước </body> -->
+    <script>
+        // Xử lý đánh giá sao
+        document.querySelectorAll('.rating-input i').forEach((star, index) => {
+            star.addEventListener('click', () => {
+                document.querySelectorAll('.rating-input i').forEach((s, i) => {
+                    if (i <= index) {
+                        s.classList.remove('bi-star');
+                        s.classList.add('bi-star-fill');
+                        s.classList.add('active');
+                    } else {
+                        s.classList.remove('bi-star-fill');
+                        s.classList.remove('active');
+                        s.classList.add('bi-star');
+                    }
+                });
+            });
+        });
+
+        // Xử lý form đánh giá
+        document.querySelectorAll('.review-form form').forEach(form => {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                // Lấy thông tin đánh giá
+                const name = form.querySelector('#reviewName').value;
+                const content = form.querySelector('#reviewContent').value;
+                const stars = form.querySelectorAll('.rating-input i.active').length;
+
+                // Tạo HTML cho đánh giá mới
+                const newReview = `
+                    <div class="review-item mb-3 p-3 border rounded">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <div>
+                                <h6 class="mb-0">${name}</h6>
+                                <div class="stars">
+                                    ${Array(5).fill('').map((_, i) =>
+                    `<i class="bi bi-star${i < stars ? '-fill' : ''} text-warning"></i>`
+                ).join('')}
+                                </div>
+                            </div>
+                            <small class="text-muted">Vừa xong</small>
+                        </div>
+                        <p class="mb-0">${content}</p>
+                    </div>
+                `;
+
+                // Thêm đánh giá mới vào đầu danh sách
+                const reviewList = form.closest('.modal-body').querySelector('.review-list');
+                reviewList.insertAdjacentHTML('afterbegin', newReview);
+
+                // Reset form
+                form.reset();
+                form.querySelectorAll('.rating-input i').forEach(star => {
+                    star.classList.remove('bi-star-fill', 'active');
+                    star.classList.add('bi-star');
+                });
+
+                // Hiển thị thông báo
+                alert('Cảm ơn bạn đã gửi đánh giá!');
+            });
+        });
+    </script>
+</body>
+
+</html>

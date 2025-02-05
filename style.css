@@ -1,0 +1,541 @@
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #8362B0;
+    --secondary-color: #8362B0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    overflow-x: hidden; /* Ngăn cuộn ngang */
+    width: 100%;
+}
+
+/* Container adjustments */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+}
+
+/* Navbar Styles */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    position: relative;
+    margin: 0 5px;
+    padding: 8px 15px !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    margin-top: 76px; /* Add margin-top to account for fixed header */
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    display: none;
+}
+
+/* Animation Durations */
+[data-aos] {
+    transition-duration: 1000ms;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 80vh;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    .intro-content {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    
+    p {
+        word-wrap: break-word;
+    }
+}
+
+/* Featured Images Section */
+.image-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.image-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    padding: 20px;
+    color: white;
+}
+
+.image-overlay h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Hover effect for images */
+.image-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-card:hover::after {
+    opacity: 1;
+}
+
+/* Introduction Section */
+.introduction {
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+
+.intro-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.feature-list li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 100%; /* Đảm bảo không vượt quá chiều rộng container */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .introduction .col-lg-6:first-child {
+        margin-bottom: 2rem;
+    }
+}
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #69409E, #69409E);
+    border-radius: 10px;
+    border: 2px solid #F5F5F5;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #69409E, #69409E);
+    box-shadow: 0 0 8px rgba(33, 178, 245, 0.6);
+}
+
+/* Firefox Scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #69409E #F5F5F5;
+}
+
+/* For Edge and other browsers */
+* {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-color: #69409E #F5F5F5;  /* Firefox */
+}
+
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+.mission-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mission-box p {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.page-banner {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/banner-fruits.jpg');
+}
+/* Fruit Card Styles */
+.fruit-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.fruit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.fruit-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.fruit-card .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.fruit-card .card-text {
+    flex-grow: 0;
+    margin-bottom: 1rem;
+}
+
+.fruit-card .card-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.fruit-features {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.fruit-features li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.fruit-features li i {
+    margin-right: 0.5rem;
+}
+
+/* Page Banner */
+.page-banner {
+    height: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/banner-fruits.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 76px;
+}
+
+.page-banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Background cho section danh mục trái cây */
+.page-banner {
+    position: relative;
+    background-image: linear-gradient(rgba(80, 76, 76, 0.95), rgba(255, 255, 255, 0.95)), url('images/dacsan.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.page-banner1 {
+    position: relative;
+    background-image: linear-gradient(rgba(80, 76, 76, 0.95), rgba(255, 255, 255, 0.95)), url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* Modal Styles */
+.modal-content {
+    border: none;
+    border-radius: 15px;
+}
+
+.modal-header {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-header .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+/* Nút xem thêm trong card */
+.fruit-card .btn {
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.fruit-card .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.fruit-card .btn i {
+    transition: transform 0.3s ease;
+}
+
+.fruit-card .btn:hover i {
+    transform: translateX(5px);
+}
+
+/* Place card styles */
+.place-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.place-card:hover {
+    transform: translateY(-5px);
+}
+
+.place-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.place-features {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.place-features li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.place-features li i {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Điều chỉnh background cho trang du lịch */
+.page-banner.travel-banner {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/banner-travel.jpg');
+}
+
+/* Map container styles */
+.map-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+    transition: all 0.3s ease;
+}
+
+.map-container iframe:hover {
+    filter: brightness(1.03);
+}
+
+/* Location info styles */
+.location-info ul li {
+    margin-bottom: 0.8rem;
+}
+
+.location-info ul li i {
+    width: 20px;
+    text-align: center;
+}
+
+.modal-footer .btn-primary {
+    background-color: #69409E;
+    border-color: #69409E;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #69409E;
+    border-color: #69409E;
+}
+
+/* Review section styles */
+.rating-input i {
+    cursor: pointer;
+    color: #ddd;
+    transition: color 0.2s ease;
+}
+
+.rating-input i:hover,
+.rating-input i.active {
+    color: #ffc107;
+}
+
+.review-item {
+    background-color: #f8f9fa;
+    transition: transform 0.2s ease;
+}
+
+.review-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.stars {
+    font-size: 0.9rem;
+}
+
+.rating-bars {
+    max-width: 300px;
+}
+
+.rating-average {
+    text-align: center;
+    min-width: 150px;
+}
+
+.rating-average .stars {
+    margin: 5px 0;
+}
+.btn-success {
+    background-color: #69409E !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .rating-summary .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .rating-bars {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}

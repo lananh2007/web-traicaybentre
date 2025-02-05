@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Mục Trái Cây - Bến Tre Xanh</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    Bến Tre Xanh
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gioithieu.html">Giới Thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dulich.html">Địa Điểm Tham Quan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="danhmuc.html">Danh Mục Trái Cây</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 class="text-center text-white">Danh Mục Trái Cây</h1>
+        </div>
+    </section>
+
+    <!-- Danh mục trái cây -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-up">Đặc Sản Trái Cây Bến Tre</h2>
+            <div class="row g-4">
+                <!-- Sầu riêng -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="fruit-card card h-100">
+                        <img src="images/tc1.jpg" class="card-img-top" alt="Sầu riêng">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Sầu Riêng</h4>
+                            <p class="card-text">Sầu riêng Bến Tre nổi tiếng với hương vị thơm ngon, béo ngậy. Đây là
+                                một trong những loại trái cây đặc sản được nhiều người yêu thích.</p>
+                            <ul class="fruit-features">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Mùa vụ: Tháng 5 - Tháng 8</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Đặc điểm: Thịt vàng, béo, thơm
+                                </li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Giá trị dinh dưỡng cao</li>
+                            </ul>
+                            <button class="btn btn-success mt-auto w-100" data-bs-toggle="modal"
+                                data-bs-target="#sauRiengModal">
+                                Xem chi tiết <i class="bi bi-arrow-right-circle ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dừa xiêm -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="fruit-card card h-100">
+                        <img src="images/tc2.jpg" class="card-img-top" alt="Dừa xiêm">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Dừa Xiêm</h4>
+                            <p class="card-text">Dừa xiêm Bến Tre được mệnh danh là "nước uống thiên nhiên" với vị ngọt
+                                thanh, mát lành và nhiều dưỡng chất.</p>
+                            <ul class="fruit-features">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Có quanh năm</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Nước ngọt mát, thơm</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Giàu khoáng chất</li>
+                            </ul>
+                            <button class="btn btn-success mt-auto w-100" data-bs-toggle="modal"
+                                data-bs-target="#duaXiemModal">
+                                Xem chi tiết <i class="bi bi-arrow-right-circle ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chôm chôm -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="fruit-card card h-100">
+                        <img src="images/tc3.jpg" class="card-img-top" alt="Chôm chôm">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Chôm Chôm</h4>
+                            <p class="card-text">Chôm chôm Bến Tre nổi tiếng với vị ngọt thanh, thịt dày và tróc hạt dễ
+                                dàng.</p>
+                            <ul class="fruit-features">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Mùa vụ: Tháng 5 - Tháng 8</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Thịt dày, ngọt thanh</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Giàu vitamin C</li>
+                            </ul>
+                            <button class="btn btn-success mt-auto w-100" data-bs-toggle="modal"
+                                data-bs-target="#chomChomModal">
+                                Xem chi tiết <i class="bi bi-arrow-right-circle ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Măng cụt -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="fruit-card card h-100">
+                        <img src="images/tc4.jpg" class="card-img-top" alt="Măng cụt">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Măng Cụt</h4>
+                            <p class="card-text">Măng cụt được mệnh danh là "nữ hoàng trái cây" với vị ngọt thanh, thơm
+                                mát và nhiều công dụng cho sức khỏe.</p>
+                            <ul class="fruit-features">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Mùa vụ: Tháng 5 - Tháng 7</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Thịt trắng, ngọt dịu</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Chống oxy hóa cao</li>
+                            </ul>
+                            <button class="btn btn-success mt-auto w-100" data-bs-toggle="modal"
+                                data-bs-target="#mangCutModal">
+                                Xem chi tiết <i class="bi bi-arrow-right-circle ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bưởi da xanh -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="fruit-card card h-100">
+                        <img src="images/tc5.jpg" class="card-img-top" alt="Bưởi da xanh">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Bưởi Da Xanh</h4>
+                            <p class="card-text">Bưởi da xanh Bến Tre nổi tiếng với vị ngọt thanh, không hạt và màu sắc
+                                đẹp mắt.</p>
+                            <ul class="fruit-features">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Mùa vụ: Quanh năm</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Múi hồng đỏ, không hạt</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Giàu vitamin C</li>
+                            </ul>
+                            <button class="btn btn-success mt-auto w-100" data-bs-toggle="modal"
+                                data-bs-target="#buoiDaXanhModal">
+                                Xem chi tiết <i class="bi bi-arrow-right-circle ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Xoài cát -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="fruit-card card h-100">
+                        <img src="images/tc6.jpg" class="card-img-top" alt="Xoài cát">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Xoài Cát</h4>
+                            <p class="card-text">Xoài cát Bến Tre có vị ngọt đậm đà, thơm mát và màu vàng hấp dẫn khi
+                                chín.</p>
+                            <ul class="fruit-features">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Mùa vụ: Tháng 3 - Tháng 5</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Thịt vàng, thơm ngọt</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Giàu vitamin A, C</li>
+                            </ul>
+                            <button class="btn btn-success mt-auto w-100" data-bs-toggle="modal"
+                                data-bs-target="#xoaiCatModal">
+                                Xem chi tiết <i class="bi bi-arrow-right-circle ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Thông tin liên hệ -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Liên Hệ</h5>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>123 Đường 30/4, TP. Bến Tre</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i>0968 867 242</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i>lananhle682@gmail.com</p>
+                    <div class="social-links mt-3">
+                        <a href="https://web.facebook.com/people/Thang-L%C3%AA/100009074363622/"
+                            class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.youtube.com/watch?v=gQow8IIj_r0" class="text-white me-3"><i
+                                class="bi bi-youtube"></i></a>
+                        <a href="https://www.instagram.com/" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Liên kết nhanh -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Liên Kết Nhanh</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Trang Chủ</a></li>
+                        <li class="mb-2"><a href="gioithieu.html" class="text-white text-decoration-none">Giới Thiệu</a>
+                        </li>
+                        <li class="mb-2"><a href="danhmuc.html" class="text-white text-decoration-none">Danh Mục Trái
+                                Cây</a></li>
+                        <li class="mb-2"><a href="dulich.html" class="text-white text-decoration-none">Địa Điểm Du
+                                Lịch</a></li>
+                    </ul>
+                </div>
+
+                <!-- Đăng ký nhận tin -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Đăng Ký Nhận Tin</h5>
+                    <p>Đăng ký để nhận thông tin mới nhất về trái cây và du lịch Bến Tre</p>
+                    <form class="mt-3">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email của bạn">
+                            <button class="btn btn-primary" type="submit">Đăng Ký</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <hr class="bg-light">
+                    <p class="text-center mb-0">© 2024 Bến Tre Xanh. Tất cả quyền được bảo lưu.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Modal Sầu Riêng -->
+    <div class="modal fade" id="sauRiengModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sầu Riêng Bến Tre</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/tc1.jpg" alt="Sầu riêng" class="img-fluid rounded mb-3">
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Đặc điểm nổi bật:</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Vỏ xanh, gai to đều</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Thịt vàng đậm, dày múi</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Hương thơm đặc trưng</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Vị béo ngậy, ngọt thanh
+                                </li>
+                            </ul>
+
+                            <h6 class="fw-bold mt-4">Giá trị dinh dưỡng:</h6>
+                            <p>Trong 100g sầu riêng có chứa:</p>
+                            <ul class="list-unstyled">
+                                <li>- Calo: 147kcal</li>
+                                <li>- Protein: 2.5g</li>
+                                <li>- Chất béo: 5.3g</li>
+                                <li>- Carbohydrate: 27.1g</li>
+                                <li>- Chất xơ: 3.8g</li>
+                            </ul>
+
+                            <h6 class="fw-bold mt-4">Mùa vụ:</h6>
+                            <p>Chính vụ từ tháng 5 đến tháng 8, cao điểm vào tháng 6-7</p>
+
+                            <h6 class="fw-bold mt-4">Cách chọn sầu riêng ngon:</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Chọn trái có màu xanh đều
+                                </li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Gõ vỏ nghe tiếng bồm bộp
+                                </li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Cuống còn tươi, màu nâu sẫm
+                                </li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Có mùi thơm đặc trưng</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Dừa Xiêm -->
+    <div class="modal fade" id="duaXiemModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Dừa Xiêm Bến Tre</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/tc2.jpg" alt="Dừa xiêm" class="img-fluid rounded mb-3">
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Đặc điểm nổi bật:</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Trái nhỏ, tròn đều</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Vỏ xanh mướt</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Nước ngọt, mát</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Cơm dừa mỏng, mềm</li>
+                            </ul>
+
+                            <h6 class="fw-bold mt-4">Giá trị dinh dưỡng:</h6>
+                            <p>Trong 100ml nước dừa có chứa:</p>
+                            <ul class="list-unstyled">
+                                <li>- Calo: 19kcal</li>
+                                <li>- Carbohydrate: 3.71g</li>
+                                <li>- Protein: 0.72g</li>
+                                <li>- Chất béo: 0.2g</li>
+                                <li>- Khoáng chất: Kali, Magie, Canxi</li>
+                            </ul>
+
+                            <h6 class="fw-bold mt-4">Mùa vụ:</h6>
+                            <p>Thu hoạch quanh năm, tốt nhất vào mùa khô</p>
+
+                            <h6 class="fw-bold mt-4">Cách chọn dừa xiêm ngon:</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Vỏ xanh tươi, không có vết
+                                    thâm</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Lắc có tiếng nước</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Cuống còn tươi</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Trái không quá già hoặc non
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Chôm Chôm -->
+    <div class="modal fade" id="chomChomModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Chôm Chôm Bến Tre</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/tc3.jpg" alt="Chôm chôm" class="img-fluid rounded mb-3">
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Đặc điểm nổi bật:</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Thịt dày, ngọt thanh</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Giàu vitamin C</li>
+                            </ul>
+
+                            <h6 class="fw-bold mt-4">Mùa vụ:</h6>
+                            <p>Tháng 5 - Tháng 8</p>
+
+                            <h6 class="fw-bold mt-4">Cách chọn chôm chôm ngon:</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Chọn trái có thịt dày, ngọt
+                                    thanh</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Trái còn tươi, màu nâu sẫm
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Măng Cụt -->
+    <div class="modal fade" id="mangCutModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Măng Cụt Bến Tre</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/tc4.jpg" alt="Măng cụt" class="img-fluid rounded mb-3">
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Đặc điểm nổi bật:</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Thịt trắng, ngọt dịu</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Chống oxy hóa cao</li>
+                            </ul>
+
+                            <h6 class="fw-bold mt-4">Mùa vụ:</h6>
+                            <p>Tháng 5 - Tháng 7</p>
+
+                            <h6 class="fw-bold mt-4">Cách chọn măng cụt ngon:</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Chọn trái có thịt trắng,
+                                    ngọt dịu</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Trái còn tươi, màu xanh sẫm
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Bưởi Da Xanh -->
+    <div class="modal fade" id="buoiDaXanhModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bưởi Da Xanh Bến Tre</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/tc5.jpg" alt="Bưởi da xanh" class="img-fluid rounded mb-3">
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Đặc điểm nổi bật:</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Múi hồng đỏ, không hạt</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Giàu vitamin C</li>
+                            </ul>
+
+                            <h6 class="fw-bold mt-4">Mùa vụ:</h6>
+                            <p>Quanh năm</p>
+
+                            <h6 class="fw-bold mt-4">Cách chọn bưởi da xanh ngon:</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Chọn trái có múi hồng đỏ,
+                                    không hạt</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Trái còn tươi, màu xanh sẫm
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Xoài Cát -->
+    <div class="modal fade" id="xoaiCatModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Xoài Cát Bến Tre</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/tc6.jpg" alt="Xoài cát" class="img-fluid rounded mb-3">
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="fw-bold">Đặc điểm nổi bật:</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Thịt vàng, thơm ngọt</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Giàu vitamin A, C</li>
+                            </ul>
+
+                            <h6 class="fw-bold mt-4">Mùa vụ:</h6>
+                            <p>Tháng 3 - Tháng 5</p>
+
+                            <h6 class="fw-bold mt-4">Cách chọn xoài cát ngon:</h6>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Chọn trái có thịt vàng,
+                                    thơm ngọt</li>
+                                <li><i class="bi bi-arrow-right-short text-success me-2"></i>Trái còn tươi, màu xanh sẫm
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
